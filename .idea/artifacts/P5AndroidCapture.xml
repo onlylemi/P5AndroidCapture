@@ -2,7 +2,7 @@
   <artifact type="jar" name="P5AndroidCapture">
     <output-path>$PROJECT_DIR$/out/artifacts/P5AndroidCapture</output-path>
     <root id="archive" name="P5AndroidCapture.jar">
-      <element id="module-output" name="P5AndroidCaptureLib" />
+      <element id="module-output" name="P5AndroidCapture" />
     </root>
   </artifact>
 </component>

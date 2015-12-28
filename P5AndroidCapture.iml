@@ -8,6 +8,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Processing" level="application" />
-    <orderEntry type="module" module-name="P5AndroidCaptureLib" />
   </component>
 </module>

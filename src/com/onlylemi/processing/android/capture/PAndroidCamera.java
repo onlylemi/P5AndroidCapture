@@ -1,14 +1,13 @@
 package com.onlylemi.processing.android.capture;
 
+import processing.core.PImage;
+
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-
-import javax.imageio.ImageIO;
-
-import processing.core.PImage;
 
 /**
  * processing android camera

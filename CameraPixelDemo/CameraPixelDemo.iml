@@ -7,8 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="P5AndroidCaptureLib" />
     <orderEntry type="library" name="Processing" level="application" />
     <orderEntry type="library" name="peasycam" level="application" />
+    <orderEntry type="module" module-name="P5AndroidCapture" />
   </component>
 </module>

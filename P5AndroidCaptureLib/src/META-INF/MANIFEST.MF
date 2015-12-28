@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: com.onlylemi.p5androidcapture.demo.com.onlylemi.p5androidcapture.phonecamera.CameraImage
-
