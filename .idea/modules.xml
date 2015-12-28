@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CameraColorDemo/CameraColorDemo.iml" filepath="$PROJECT_DIR$/CameraColorDemo/CameraColorDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CameraImageDemo/CameraImageDemo.iml" filepath="$PROJECT_DIR$/CameraImageDemo/CameraImageDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CameraMaskDemo/CameraMaskDemo.iml" filepath="$PROJECT_DIR$/CameraMaskDemo/CameraMaskDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CameraMusicDemo/CameraMusicDemo.iml" filepath="$PROJECT_DIR$/CameraMusicDemo/CameraMusicDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CameraPixelDemo/CameraPixelDemo.iml" filepath="$PROJECT_DIR$/CameraPixelDemo/CameraPixelDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P5AndroidCapture.iml" filepath="$PROJECT_DIR$/P5AndroidCapture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P5AndroidCaptureLib/P5AndroidCaptureLib.iml" filepath="$PROJECT_DIR$/P5AndroidCaptureLib/P5AndroidCaptureLib.iml" />
+    </modules>
+  </component>
+</project>
