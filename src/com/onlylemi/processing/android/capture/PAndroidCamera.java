@@ -63,17 +63,18 @@ public class PAndroidCamera implements Runnable {
                     System.out.println("connect fail!!! ");
                     flag = false;
                 }
-                // System.out.println("connect success. ");
-                end = System.currentTimeMillis();
+                System.out.println("connect success. ");
                 ins = s.getInputStream();
                 image = ImageIO.read(ins);
 
-                start = end;
+                //start = end;
+                end = System.currentTimeMillis();
                 if (end - start < imageFrameRate) {
                     Thread.sleep(imageFrameRate - (end - start));
                     start = end;
                 }
                 ins.close();
+                s.close();
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (Exception e) {

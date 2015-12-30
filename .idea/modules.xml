@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/CameraMusicDemo/CameraMusicDemo.iml" filepath="$PROJECT_DIR$/CameraMusicDemo/CameraMusicDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/CameraPixelDemo/CameraPixelDemo.iml" filepath="$PROJECT_DIR$/CameraPixelDemo/CameraPixelDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/P5AndroidCapture.iml" filepath="$PROJECT_DIR$/P5AndroidCapture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SensorData/SensorData.iml" filepath="$PROJECT_DIR$/SensorData/SensorData.iml" />
     </modules>
   </component>
 </project>
