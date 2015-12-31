@@ -63,7 +63,7 @@ public class PAndroidCamera implements Runnable {
                     System.out.println("connect fail!!! ");
                     flag = false;
                 }
-                System.out.println("connect success. ");
+                //System.out.println("connect success. ");
                 ins = s.getInputStream();
                 image = ImageIO.read(ins);
 

@@ -1,7 +1,7 @@
 package com.onlylemi.processing.android.capture;
 
-import sun.misc.IOUtils;
-import sun.rmi.runtime.Log;
+import processing.data.JSONArray;
+import processing.data.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +13,7 @@ import java.net.Socket;
  *
  * @author onlylemi
  */
-public class PAndroidSensor implements Runnable {
+public class PAndroidSensor implements Runnable, PSensor {
 
     private byte[] byteBuffer = new byte[1024];
     private ServerSocket ss = null;
@@ -34,7 +34,7 @@ public class PAndroidSensor implements Runnable {
         flag = true;
         start = System.currentTimeMillis();
         try {
-            ss = new ServerSocket(6000);
+            ss = new ServerSocket(6001);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -61,7 +61,7 @@ public class PAndroidSensor implements Runnable {
                 }
                 data = sb.toString();
 
-                System.out.println("data:" + data);
+                //System.out.println(data);
 
                 //start = end;
                 end = System.currentTimeMillis();
@@ -95,5 +95,78 @@ public class PAndroidSensor implements Runnable {
 
     public String getData() {
         return data;
+    }
+
+    /**
+     * parser json data
+     *
+     * @param data
+     * @return
+     */
+    private float[] parserSensorJson(String data, String sensor) {
+        float[] values = new float[3];
+
+        if (!"".equals(data)) {
+            JSONObject jo = JSONObject.parse(data);
+            JSONArray ja = jo.getJSONArray(PSensorType.ANDROID_SENSOR);
+
+            for (int i = 0; i < ja.size(); i++) {
+                if (!ja.getJSONObject(i).isNull(sensor)) {
+                    JSONObject jo1 = ja.getJSONObject(i).getJSONObject(sensor);
+
+                    values[0] = jo1.getFloat("value0");
+                    values[1] = jo1.getFloat("value1");
+                    values[2] = jo1.getFloat("value2");
+                }
+
+            }
+        }
+
+        return values;
+    }
+
+    @Override
+    public float[] getAccelerometerSensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_ACCELEROMETER);
+    }
+
+    @Override
+    public float getLightSensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_LIGHT)[0];
+    }
+
+    @Override
+    public float[] getOrientationSensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_ORIENTATION);
+    }
+
+    @Override
+    public float getProximitySensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_PROXIMITY)[0];
+    }
+
+    @Override
+    public float getTemperatureSensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_TEMPERATURE)[0];
+    }
+
+    @Override
+    public float getPressureSensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_PRESSURE)[0];
+    }
+
+    @Override
+    public float[] getGyroscopeSensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_PRESSURE);
+    }
+
+    @Override
+    public float[] getMagneticFieldSensorValues() {
+        return parserSensorJson(data, PSensorType.TYPE_MAGNETIC_FIELD);
+    }
+
+    @Override
+    public float[] getSensorValues(String sensor) {
+        return parserSensorJson(data, sensor);
     }
 }
