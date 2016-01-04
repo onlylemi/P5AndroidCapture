@@ -37,7 +37,7 @@ public class CameraMask extends PApplet {
         rect(0, 0, width, height);
 
         tint(255, 25);
-        img = ac.getPImage();
+        img = ac.getCameraImage();
         img.mask(mask);
         image(img, width / 2, height / 2);
     }

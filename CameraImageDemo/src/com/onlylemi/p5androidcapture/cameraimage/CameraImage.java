@@ -25,7 +25,7 @@ public class CameraImage extends PApplet {
 
     @Override
     public void draw() {
-        img = ac.getPImage();
+        img = ac.getCameraImage();
         image(img, 0, 0);
     }
 

@@ -31,7 +31,7 @@ public class CameraPixel extends PApplet {
     public void draw() {
         background(0);
         translate(-width / 2, -height / 2);
-        img = ac.getPImage();
+        img = ac.getCameraImage();
         int steps = 10;
         for (int i = 0; i < width / steps; i++) {
             for (int j = 0; j < height / steps; j++) {
