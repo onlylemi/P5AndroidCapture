@@ -1,7 +1,9 @@
 package com.onlylemi.processing.android.capture;
 
 /**
- * Created by only乐秘 on 2015-12-31.
+ * a interface about getting sensor data
+ *
+ * @author onlylemi
  */
 public interface PSensor {
 
@@ -62,6 +64,8 @@ public interface PSensor {
     float[] getMagneticFieldSensorValues();
 
     /**
+     * get sensor values
+     *
      * @param sensor
      * @return
      */

@@ -27,7 +27,11 @@ public class PAndroidSensor implements Runnable, PSensor {
 
     private Thread thread;
 
-
+    /**
+     * new a PAndroidSensor obj
+     *
+     * @param rate the rate of getting data
+     */
     public PAndroidSensor(long rate) {
         this.rate = rate;
 
@@ -79,20 +83,32 @@ public class PAndroidSensor implements Runnable, PSensor {
         }
     }
 
-
+    /**
+     * start getting sensors data
+     */
     public void start() {
         thread.start();
     }
 
-
+    /**
+     * restart getting sensors data
+     */
     public void restart() {
         thread.resume();
     }
 
+    /**
+     * pause getting sensors data
+     */
     public void pause() {
         thread.suspend();
     }
 
+    /**
+     * the sensors data of android client
+     *
+     * @return
+     */
     public String getData() {
         return data;
     }

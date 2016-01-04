@@ -30,7 +30,7 @@ public class PAndroidCamera implements Runnable {
     private boolean flag;
 
     /**
-     * PAndroidCamera construct
+     * new a PAndroidCamera obj
      *
      * @param width          the width of image
      * @param height         the height of image

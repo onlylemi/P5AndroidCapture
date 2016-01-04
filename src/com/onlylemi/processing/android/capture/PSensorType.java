@@ -1,7 +1,9 @@
 package com.onlylemi.processing.android.capture;
 
 /**
- * Created by only乐秘 on 2015-12-28.
+ * some sensor type in this final class
+ *
+ * @author onlylemi
  */
 public final class PSensorType {
 
