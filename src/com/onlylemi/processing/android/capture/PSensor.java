@@ -2,6 +2,8 @@ package com.onlylemi.processing.android.capture;
 
 /**
  * a interface about getting sensor data
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
  *
  * @author onlylemi
  */

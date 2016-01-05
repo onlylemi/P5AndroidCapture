@@ -7,6 +7,10 @@ import processing.core.PApplet;
 import processing.core.PImage;
 
 /**
+ * CameraMusicDemo
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
+ *
  * @author onlylemi
  */
 public class CameraMusic extends PApplet {

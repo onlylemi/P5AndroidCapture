@@ -6,6 +6,10 @@ import processing.core.PApplet;
 import processing.core.PImage;
 
 /**
+ * CameraPixelDemo
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
+ *
  * @author onlylemi
  */
 public class CameraPixel extends PApplet {

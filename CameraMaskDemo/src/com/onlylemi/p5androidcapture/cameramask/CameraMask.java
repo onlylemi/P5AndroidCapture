@@ -5,7 +5,11 @@ import processing.core.PApplet;
 import processing.core.PImage;
 
 /**
- * Created by only乐秘 on 2015-12-28.
+ * CameraMaskDemo
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
+ *
+ * @author onlylemi
  */
 public class CameraMask extends PApplet {
 

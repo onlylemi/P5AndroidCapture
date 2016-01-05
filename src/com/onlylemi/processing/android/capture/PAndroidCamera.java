@@ -11,6 +11,8 @@ import java.net.Socket;
 
 /**
  * processing android camera
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
  *
  * @author onlylemi
  */

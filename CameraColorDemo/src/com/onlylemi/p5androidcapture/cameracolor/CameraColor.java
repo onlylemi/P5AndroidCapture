@@ -4,6 +4,10 @@ import com.onlylemi.processing.android.capture.PAndroidCamera;
 import processing.core.PApplet;
 
 /**
+ * CameraColorDemo
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
+ *
  * @author onlylemi
  */
 public class CameraColor extends PApplet {

@@ -2,6 +2,8 @@ package com.onlylemi.processing.android.capture;
 
 /**
  * some sensor type in this final class
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
  *
  * @author onlylemi
  */

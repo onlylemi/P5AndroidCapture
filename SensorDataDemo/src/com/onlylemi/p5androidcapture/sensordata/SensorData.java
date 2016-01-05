@@ -6,7 +6,11 @@ import com.onlylemi.processing.android.capture.PSensorType;
 import processing.core.PApplet;
 
 /**
- * Created by only乐秘 on 2015-12-30.
+ * SensorDataDemo
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
+ *
+ * @author onlylemi
  */
 public class SensorData extends PApplet {
 

@@ -10,6 +10,8 @@ import java.net.Socket;
 
 /**
  * processing android sensor
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
  *
  * @author onlylemi
  */

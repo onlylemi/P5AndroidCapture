@@ -4,12 +4,13 @@ import com.onlylemi.processing.android.capture.PAndroidSensor;
 import processing.core.PApplet;
 
 /**
- * AccSensorDemo
+ * AccSensor
+ * <p>
  * https://github.com/onlylemi/processing-android-capture
  *
  * @author only乐秘
  */
-public class AccSensorDemo extends PApplet {
+public class AccSensor extends PApplet {
 
     private PAndroidSensor pas;
 
@@ -61,6 +62,6 @@ public class AccSensorDemo extends PApplet {
     }
 
     public static void main(String[] args) {
-        PApplet.main(new String[]{"--present", new AccSensorDemo().getClass().getName()});
+        PApplet.main(new String[]{"--present", new AccSensor().getClass().getName()});
     }
 }
