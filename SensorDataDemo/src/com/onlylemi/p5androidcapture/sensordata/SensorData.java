@@ -1,7 +1,6 @@
 package com.onlylemi.p5androidcapture.sensordata;
 
 import com.onlylemi.processing.android.capture.PAndroidSensor;
-import com.onlylemi.processing.android.capture.PSensor;
 import com.onlylemi.processing.android.capture.PSensorType;
 import processing.core.PApplet;
 

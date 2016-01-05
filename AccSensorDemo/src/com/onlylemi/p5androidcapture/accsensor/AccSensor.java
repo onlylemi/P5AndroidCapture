@@ -1,6 +1,7 @@
 package com.onlylemi.p5androidcapture.accsensor;
 
 import com.onlylemi.processing.android.capture.PAndroidSensor;
+import com.onlylemi.processing.android.capture.PSensorType;
 import processing.core.PApplet;
 
 /**
@@ -28,6 +29,7 @@ public class AccSensor extends PApplet {
     @Override
     public void draw() {
         // get accelerometer sensor value
+        //float[] values = pas.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
         float[] values = pas.getAccelerometerSensorValues();
         float x = values[0];
         float y = values[1];
