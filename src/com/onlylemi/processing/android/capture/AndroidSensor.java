@@ -109,7 +109,7 @@ public class AndroidSensor implements Runnable, Sensor {
     /**
      * the sensors data of android client
      *
-     * @return
+     * @return snesors data
      */
     public String getData() {
         return data;
@@ -119,6 +119,7 @@ public class AndroidSensor implements Runnable, Sensor {
      * parser json data
      *
      * @param data
+     * @param sensor
      * @return
      */
     private float[] parserSensorJson(String data, String sensor) {
