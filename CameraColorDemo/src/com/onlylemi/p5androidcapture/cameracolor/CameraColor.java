@@ -1,6 +1,6 @@
 package com.onlylemi.p5androidcapture.cameracolor;
 
-import com.onlylemi.processing.android.capture.PAndroidCamera;
+import com.onlylemi.processing.android.capture.AndroidCamera;
 import processing.core.PApplet;
 
 /**
@@ -12,7 +12,7 @@ import processing.core.PApplet;
  */
 public class CameraColor extends PApplet {
 
-    private PAndroidCamera ac;
+    private AndroidCamera ac;
 
     @Override
     public void settings() {
@@ -21,7 +21,7 @@ public class CameraColor extends PApplet {
 
     @Override
     public void setup() {
-        ac = new PAndroidCamera(width, height, 20);
+        ac = new AndroidCamera(width, height, 20);
         ac.start();
     }
 

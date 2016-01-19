@@ -15,7 +15,7 @@ import java.net.Socket;
  *
  * @author onlylemi
  */
-public class PAndroidSensor implements Runnable, PSensor {
+public class AndroidSensor implements Runnable, Sensor {
 
     private byte[] byteBuffer = new byte[1024];
     private ServerSocket ss = null;
@@ -30,11 +30,11 @@ public class PAndroidSensor implements Runnable, PSensor {
     private Thread thread;
 
     /**
-     * new a PAndroidSensor obj
+     * new a AndroidSensor obj
      *
      * @param rate the rate of getting data
      */
-    public PAndroidSensor(long rate) {
+    public AndroidSensor(long rate) {
         this.rate = rate;
 
         flag = true;
@@ -126,7 +126,7 @@ public class PAndroidSensor implements Runnable, PSensor {
 
         if (!"".equals(data)) {
             JSONObject jo = JSONObject.parse(data);
-            JSONArray ja = jo.getJSONArray(PSensorType.ANDROID_SENSOR);
+            JSONArray ja = jo.getJSONArray(SensorType.ANDROID_SENSOR);
 
             for (int i = 0; i < ja.size(); i++) {
                 if (!ja.getJSONObject(i).isNull(sensor)) {
@@ -145,42 +145,42 @@ public class PAndroidSensor implements Runnable, PSensor {
 
     @Override
     public float[] getAccelerometerSensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_ACCELEROMETER);
+        return parserSensorJson(data, SensorType.TYPE_ACCELEROMETER);
     }
 
     @Override
     public float getLightSensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_LIGHT)[0];
+        return parserSensorJson(data, SensorType.TYPE_LIGHT)[0];
     }
 
     @Override
     public float[] getOrientationSensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_ORIENTATION);
+        return parserSensorJson(data, SensorType.TYPE_ORIENTATION);
     }
 
     @Override
     public float getProximitySensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_PROXIMITY)[0];
+        return parserSensorJson(data, SensorType.TYPE_PROXIMITY)[0];
     }
 
     @Override
     public float getTemperatureSensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_TEMPERATURE)[0];
+        return parserSensorJson(data, SensorType.TYPE_TEMPERATURE)[0];
     }
 
     @Override
     public float getPressureSensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_PRESSURE)[0];
+        return parserSensorJson(data, SensorType.TYPE_PRESSURE)[0];
     }
 
     @Override
     public float[] getGyroscopeSensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_PRESSURE);
+        return parserSensorJson(data, SensorType.TYPE_PRESSURE);
     }
 
     @Override
     public float[] getMagneticFieldSensorValues() {
-        return parserSensorJson(data, PSensorType.TYPE_MAGNETIC_FIELD);
+        return parserSensorJson(data, SensorType.TYPE_MAGNETIC_FIELD);
     }
 
     @Override

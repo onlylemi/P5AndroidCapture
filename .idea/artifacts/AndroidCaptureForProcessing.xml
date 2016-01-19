@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AndroidCaptureForProcessing">
+    <output-path>$PROJECT_DIR$/out/artifacts/AndroidCaptureForProcessing</output-path>
+    <root id="archive" name="AndroidCaptureForProcessing.jar">
+      <element id="module-output" name="P5AndroidCapture" />
+    </root>
+  </artifact>
+</component>

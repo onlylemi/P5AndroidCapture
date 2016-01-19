@@ -1,6 +1,6 @@
 package com.onlylemi.p5androidcapture.cameramask;
 
-import com.onlylemi.processing.android.capture.PAndroidCamera;
+import com.onlylemi.processing.android.capture.AndroidCamera;
 import processing.core.PApplet;
 import processing.core.PImage;
 
@@ -13,7 +13,7 @@ import processing.core.PImage;
  */
 public class CameraMask extends PApplet {
 
-    private PAndroidCamera ac;
+    private AndroidCamera ac;
     private PImage img;
     private PImage mask;
 
@@ -28,7 +28,7 @@ public class CameraMask extends PApplet {
         background(0);
         imageMode(CENTER);
 
-        ac = new PAndroidCamera(width, height, 30);
+        ac = new AndroidCamera(width, height, 30);
         ac.start();
 
         mask = loadImage("mask.png");

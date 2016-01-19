@@ -7,7 +7,7 @@ package com.onlylemi.processing.android.capture;
  *
  * @author onlylemi
  */
-public interface PSensor {
+public interface Sensor {
 
     /**
      * @return All values are in SI units (m/s^2)

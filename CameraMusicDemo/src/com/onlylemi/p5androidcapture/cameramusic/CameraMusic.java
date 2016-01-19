@@ -1,6 +1,6 @@
 package com.onlylemi.p5androidcapture.cameramusic;
 
-import com.onlylemi.processing.android.capture.PAndroidCamera;
+import com.onlylemi.processing.android.capture.AndroidCamera;
 import ddf.minim.AudioPlayer;
 import ddf.minim.Minim;
 import processing.core.PApplet;
@@ -15,7 +15,7 @@ import processing.core.PImage;
  */
 public class CameraMusic extends PApplet {
 
-    private PAndroidCamera ac;
+    private AndroidCamera ac;
     private PImage img;
     private PImage mask;
 
@@ -34,7 +34,7 @@ public class CameraMusic extends PApplet {
         imageMode(CENTER);
         initAudio();
 
-        ac = new PAndroidCamera(width, height, 30);
+        ac = new AndroidCamera(width, height, 30);
         ac.start();
 
         mask = loadImage("mask.png");

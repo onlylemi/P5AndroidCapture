@@ -1,6 +1,6 @@
 package com.onlylemi.p5androidcapture.camerapixel;
 
-import com.onlylemi.processing.android.capture.PAndroidCamera;
+import com.onlylemi.processing.android.capture.AndroidCamera;
 import peasy.PeasyCam;
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -14,7 +14,7 @@ import processing.core.PImage;
  */
 public class CameraPixel extends PApplet {
 
-    private PAndroidCamera ac;
+    private AndroidCamera ac;
     private PImage img;
     private PeasyCam cam;
 
@@ -27,7 +27,7 @@ public class CameraPixel extends PApplet {
     public void setup() {
         cam = new PeasyCam(this, 500);
 
-        ac = new PAndroidCamera(width, height, 20);
+        ac = new AndroidCamera(width, height, 20);
         ac.start();
     }
 

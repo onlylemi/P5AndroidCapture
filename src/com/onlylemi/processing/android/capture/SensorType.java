@@ -7,7 +7,7 @@ package com.onlylemi.processing.android.capture;
  *
  * @author onlylemi
  */
-public final class PSensorType {
+public final class SensorType {
 
     public final static String ANDROID_SENSOR = "ANDROID_SENSOR";
 

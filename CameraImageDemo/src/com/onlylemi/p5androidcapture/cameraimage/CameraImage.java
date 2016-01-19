@@ -13,7 +13,7 @@ import processing.core.PImage;
  */
 public class CameraImage extends PApplet {
 
-    private PAndroidCamera ac;
+    private AndroidCamera ac;
     private PImage img;
 
     @Override
@@ -23,7 +23,7 @@ public class CameraImage extends PApplet {
 
     @Override
     public void setup() {
-        ac = new PAndroidCamera(width, height, 30);
+        ac = new AndroidCamera(width, height, 30);
         ac.start();
     }
 
