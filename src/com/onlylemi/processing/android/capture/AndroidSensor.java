@@ -89,6 +89,7 @@ public class AndroidSensor implements Runnable, Sensor {
      * start getting sensors data
      */
     public void start() {
+        flag = true;
         thread.start();
     }
 
@@ -96,14 +97,14 @@ public class AndroidSensor implements Runnable, Sensor {
      * restart getting sensors data
      */
     public void restart() {
-        thread.resume();
+        start();
     }
 
     /**
      * pause getting sensors data
      */
     public void pause() {
-        thread.suspend();
+        flag = false;
     }
 
     /**

@@ -114,6 +114,7 @@ public class AndroidCamera implements Runnable {
      * start phone camera
      */
     public void start() {
+        flag = true;
         thread.start();
     }
 
@@ -121,14 +122,14 @@ public class AndroidCamera implements Runnable {
      * restart phone camera
      */
     public void restart() {
-        thread.resume();
+        start();
     }
 
     /**
      * stop phone camera
      */
     public void pause() {
-        thread.suspend();
+        flag = false;
     }
 
 }

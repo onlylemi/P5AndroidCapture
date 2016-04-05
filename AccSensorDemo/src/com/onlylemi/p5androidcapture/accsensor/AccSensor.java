@@ -28,7 +28,7 @@ public class AccSensor extends PApplet {
     @Override
     public void draw() {
         // get accelerometer sensor value
-        //float[] values = pas.getSensorValues(SensorType.TYPE_ACCELEROMETER);
+        // float[] values = pas.getSensorValues(SensorType.TYPE_ACCELEROMETER);
         float[] values = pas.getAccelerometerSensorValues();
         float x = values[0];
         float y = values[1];

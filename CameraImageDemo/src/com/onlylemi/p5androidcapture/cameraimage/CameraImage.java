@@ -34,6 +34,7 @@ public class CameraImage extends PApplet {
     }
 
     public static void main(String[] args) {
+        //PApplet.main(new String[]{new CameraImage().getClass().getName()});
         PApplet.main(new String[]{"--present", new CameraImage().getClass().getName()});
     }
 }
